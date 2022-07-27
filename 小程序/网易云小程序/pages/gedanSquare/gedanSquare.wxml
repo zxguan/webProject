@@ -1,0 +1,18 @@
+<!--pages/gedanSquare/gedanSquare.wxml-->
+<view class="songContainer">
+    <!-- 导航区域 -->
+    <scroll-view scroll-x class="navScroll" enable-flex scroll-into-view="{{'scroll' + navId}}" scroll-with-animation>
+        <view class="navItem" wx:for="{{gedanSquareList}}" wx:key="id" id="{{'scroll' + item.id}}">
+            <view class="navgContent {{navName === item.name?'active':''}} " bindtap="changeNav" data-name="{{item.name}}" data-id="{{item.id}}">
+                {{item.name}}
+            </view>
+        </view>
+    </scroll-view>
+    <!-- 歌单区域 -->
+    <scroll-view scroll-y enable-flex class="songSheetScroll" >
+        <view  class="songSheetItem" wx:for="{{gedanList}}" wx:key="id" bindtap="tosongSheet" data-id="{{item.id}}">
+            <image src="{{item.coverImgUrl}}"></image>
+            <text>{{item.name}}</text>
+        </view>
+    </scroll-view>
+</view>

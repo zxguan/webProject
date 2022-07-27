@@ -1,0 +1,14 @@
+<!--logo-->
+<view class="logo">网亦云</view>
+<!-- 输入用户名和密码 -->
+<view class="inputBox">
+  <text class="icon iconfont icon-touxiang"></text>
+  <input model:value="{{phone}}" bindinput="handleInput" placeholder-class="placeholder"  type="text" placeholder="请输入手机号"/>
+</view>
+<view class="inputBox">
+  <text  class="icon iconfont icon-suo"></text>
+  <input model:value="{{password}}" bindinput="handleInput" placeholder-class="placeholder" type="password" placeholder="请输入密码"/>
+</view>
+<!-- 按钮 -->
+<view bindtap="login" class="btn">登录</view>
+

@@ -1,0 +1,26 @@
+<!-- 背景 -->
+<image class="bg" src="{{songDetail.al.picUrl||'../../static/img/bg.jpeg'}}"></image>
+
+<!-- 歌词区域 -->
+<scroll-view scroll-with-animation class="scroll" scroll-y scroll-top="{{scrolltop}}">
+  <view wx:for="{{lyricArr}}" class="{{lyricIndex === index?'now':''}}"  wx:key="index">{{item.text}}</view>
+</scroll-view>
+
+<!-- 歌曲信息 -->
+<view class="songInfo">
+  <text class="song">{{songDetail.al.name||'暂无歌曲'}}</text>
+  <text class="singer">{{songDetail.ar[0].name||'暂无歌手'}}</text>
+</view>
+
+<!-- 滑块 -->
+<slider bindchange="change" bindchanging="changing" block-size="16" min="0" max="{{allTime}}" step="1" value="{{currentTime}}" activeColor="#FF4500"></slider>
+
+<!-- 控制按钮 -->
+<view class="control">
+  <text class="icon iconfont icon-icon-1" id="pre" bindtap="playUP"></text>
+    <!-- 播放  暂停-->
+    <text wx:if="{{isplay}}" bindtap="songPause" class="icon iconfont icon-play"></text>
+    <text wx:else bindtap="songPlay" class="icon iconfont icon-zanting"></text>
+    <!-- 下一首 -->
+    <text class="icon iconfont icon-icon-" id="next" bindtap="playNext"></text>
+</view>

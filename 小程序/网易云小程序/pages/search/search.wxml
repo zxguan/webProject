@@ -1,0 +1,49 @@
+<!-- 搜索框 -->
+<view class="searchBox">
+  <view class="searchContent">
+    <input class="inputContent" model:value="{{inputValue}}" placeholder="请输入搜索内容" type="text" bindinput="handleInputChange"/>
+    <text class="icon iconfont icon-sousuo" bindtap="search"></text>
+  </view>
+</view>
+<!-- block块级元素 -->
+<block wx:if="{{searchList.length}}">
+  <!-- 搜索内容展示区 -->
+  <view class="showSearchContent">
+    <view class="searchContent1">搜索内容：{{inputValue}}</view>
+    <view class="searchList">
+      <view class="searchItem" wx:for="{{searchList}}" wx:key="id" bindtap="search">
+        <text class="icon iconfont icon-sousuo" ></text>
+        <text class="content">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+<block wx:else>
+  <!-- 搜索历史区域 -->
+  <view class="historyBox">
+    <view class="title">
+      <text class="tilteText">搜索历史</text>
+      <text class="clear" bindtap="clearAll">全部清除</text>
+    </view>
+    <view bindtap="changeInputValue" class="historyContent">
+      <text data-text="{{item}}" class="textContent" wx:for="{{historyList}}" wx:key="index">{{item}}</text>
+    </view>
+  </view>
+  <!-- 热搜榜 -->
+  <view class="topSearchBox">
+    <view class="title">
+      <text class="titleText">热搜榜</text>
+    </view>
+    <view class="topSearchContent">
+      <view wx:for="{{topSearchList}}" wx:key="index" class="hotSongs">
+        <text>{{index+1}}</text>
+      <!-- data-text="{{item}}"将item值赋值给text，传给js形参e -->
+      <text data-text="{{item}}">{{item.first}}</text>
+      </view>
+    </view>
+  </view>
+</block>
+
+
+

@@ -1,0 +1,8 @@
+<!--pages/mineList/mineList.wxml-->
+<view data-index="{{index}}"  data-gequid="{{item}}" bindtap="toPlaym" wx:for="{{recentPlayList}}" wx:key="id" class="songItem">
+  <image src="{{item.al.picUrl}}"></image>
+  <view class="text">
+    <text  class="songName">{{item.name}}</text>
+    <text class="singer">{{item.ar[0].name}}</text>
+  </view>
+</view>

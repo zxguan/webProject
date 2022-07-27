@@ -1,0 +1,60 @@
+<!--个人信息-->
+<view class="userinfo">
+        <image src="{{userinfo.backgroundUrl || '../../static/img/3.jpg'}}"></image>
+    <view class="userinfoContent">
+        <image src="{{userinfo.avatarUrl || '../../static/img/default.jpeg'}}"></image>
+        <text>{{userinfo.nickname || '请登录'}}</text>
+    </view>
+</view>
+<!-- 图标导航区域 -->
+<view class="navBox">
+    <view class="nav">
+        <view class="navItem">
+            <text class="icon iconfont icon-bofang"></text>
+            <text>播放列表</text>
+        </view>
+        <view class="navItem">
+            <text class="icon iconfont icon-xiazai"></text>
+            <text>本地下载</text>
+        </view>
+        <view class="navItem">
+            <text class="icon iconfont icon-wodehaoyou"></text>
+            <text>我的好友</text>
+        </view>
+        <view class="navItem">
+            <text class="icon iconfont icon-shoucang"></text>
+            <text>收藏</text>
+        </view>
+    </view>
+</view>
+
+<view class="navBox1">
+  <view bindtap="search" class="nav1">
+    <view class="navItem1">
+      <text  class="icon iconfont icon-aixinkuaizhuang"></text>
+      <view class="zi">
+        <text>我收藏的歌单</text>
+      </view>
+    </view>
+    <text bindtap="search" class="ka iconfont icon-aixinkuaizhuang"></text>
+  </view>
+</view>
+
+<!-- 最近播放区域 -->
+<view class="recentPlayBox">
+    <view class="recentPlay">
+        <view class="title">最近播放</view>
+        <!-- 可滚动区域 -->
+        <scroll-view  wx:if="{{userinfo.userId}}" class="scrollBox" scroll-x enable-flex>
+            <view bindtap="toPlay" wx:for="{{recentPlayList}}" wx:key="index" data-id="{{item}}" data-index="{{index}}" class="songItem">
+                <image src="{{item.song.al.picUrl}}"></image>
+                <text>{{item.song.name}}</text>
+            </view>
+        </scroll-view>
+        <view wx:else>暂无数据</view>
+    </view>
+</view>
+<!-- 按钮 -->
+<view wx:if="{{userinfo.userId}}" bindtap="logout" class="btn">退出</view>
+<view wx:else class="btn" bindtap="toLogin">登录</view>
+

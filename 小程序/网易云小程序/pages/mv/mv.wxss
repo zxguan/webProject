@@ -1,0 +1,24 @@
+/* pages/mv/mv.wxss */
+/* pages/video/video.wxss */
+.videoContainer{
+  width: 700rpx;
+  height: 550rpx;
+  margin: 20rpx;
+  border: 2rpx solid #FF4500;
+  /* margin-bottom: 20rpx; */
+}
+.videolist{
+  width: 700rpx;
+  height: 400rpx;
+  padding-bottom: 10rpx;
+}
+.videolist>video{
+  width: 700rpx;
+  height: 400rpx;
+}
+.title{
+  align-content: center;
+  padding: 10rpx;
+  font-size: medium;
+  color:#FF4500;
+}

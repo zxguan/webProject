@@ -1,0 +1,358 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    /* 设置网页最小宽，防止布局压缩 */
+    min-width: 1600px;
+}
+body{
+    background-color: #f5f5f5;
+}
+/* 顶部 */
+.navBox{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.navBox>.content{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nbLeft{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.nbLeft .logo{
+    display: flex;
+    margin-bottom: 8px;
+}
+.nbLeft .logo img{
+    width: 45px;
+    height: 43px;
+}
+.nbLeft .logo .text{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+}
+.nbLeft .logo .text:nth-child(2){
+    font-size: 10px;
+}
+.nbLeft .navBar{
+    display: flex;
+    cursor: pointer;
+}
+.nbLeft .navBar li{
+    padding-bottom: 23px;
+    margin:0 33px;
+    font-size: 18px;
+}
+.nbLeft .navBar li:hover{
+    color: #2D6EFF;
+    border-bottom: 3px solid #2D6EFF;
+}
+.nbLeft .navBar li.active{
+    color: #2D6EFF;
+    border-bottom: 3px solid #2D6EFF;
+}
+.nbRight{
+    display: flex;
+    align-items: flex-end;
+}
+.nbRight .login img{
+    width: 30px;
+    height: 30px;
+}
+.nbRight .searchBox{
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    width: 395px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.nbRight .searchBox img{
+    width: 21px;
+    height: 21px;
+    margin: 0 6px;
+}
+.nbRight .searchBox input{
+    flex-grow: 1;
+    background-color: #f5f5f5;
+    padding-left: 10px;
+}
+.nbRight .login img{
+    vertical-align: middle;
+}
+.nbRight .login{
+    color: #6d6d6d;
+    font-size: 16px;
+    margin:0 0 23px 40px;
+}
+/* Python基础一阶段测评 */
+
+/* 上边 */
+
+.jdContent{
+    margin:60px auto 100px;
+    background-color: #fff;
+    width: 60%;
+    height: 515px;
+    border-radius: 5px;
+}
+.jdContent .jdTop{
+    border-bottom: 0.5px solid rgba(0,0,0,0.1);
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-grow: 1; */
+}
+.jdContent .jdTop span:nth-child(1){
+    color: #000;
+    font-size: 24px;
+    line-height: 55px;
+    margin-left: 20px;
+
+}
+.jdContent .jdTop .jdRight{
+    
+    /* background-color: teal; */
+    display: inline-block;
+    /* height: 55px; */
+    /* width: 400px; */
+    margin-right: 20px;
+    display: flex;
+    
+}
+.jdContent .jdTop .jdRight >img{
+    height: 30px;
+    width: 30px;
+    margin-right: 5px; 
+    /* line-height: 55px; */
+    margin-top: 12.5px; 
+}
+.jdContent .jdTop .jdRight>span{
+    height: 25px;
+    /* margin-top: 12.5px; */
+    text-align: center;
+    color: #2D6EFF;
+    font-size: 14px;
+    background-color: rgba(29, 95, 238, 0.1);
+    display: inline-block;
+    padding: 1px 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    line-height: 25px;
+    
+}
+/* 中间部分 */
+/* 第一行 */
+.jdCenter{
+    margin-top: 15px;
+    width: 100%;
+}
+.jdCenter .jdTx{
+    /* display: flex; */
+    margin-left: 20px;
+    height: 30px;
+    /* background-color: rgb(234, 241, 125); */
+}
+.jdCenter .jdTx span:nth-child(1){
+    color: #b7b7b7;
+    font-size: 18px;
+    line-height: 30px;
+    /* margin-right: 5px; */
+}
+.jdCenter .jdTx span:nth-child(2){
+    color: #2D6EFF;
+    font-size: 18px;
+    /* font-weight: bold; */
+    /* margin-left: 1px; */
+    line-height: 30px;
+}
+.jdCenter .jdTx img{
+    margin-left: 1px;
+    line-height: 30px;
+}
+.jdCenter .jdTx span:nth-child(4){
+    color: #2D6EFF;
+    opacity: 0.8;
+    font-size: 12px;
+    line-height: 30px;
+}
+/* 第二行 */
+.jdCenter .jdWt span{
+    display: block;
+    margin-left: 20px;
+    color: #797979;
+    font-size: 12px;
+    line-height: 20px;
+    margin-right: 20px;
+    margin-top: 12px;
+    word-break: break-all;
+}
+/* 第三行 */
+.jdCenter .jdHd textarea{
+    margin-left: 20px;
+    height: 150px;
+    width: 920px;
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 0.5px solid rgba(0,0,0,0.1);
+
+}
+/* 第四行 */
+.jdCenter .jdSx{
+    margin-left: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.jdCenter .jdSx .jdNext{
+    display: inline-block;
+}
+.jdCenter .jdSx .btn{
+    display: inline-block;
+    height: 30px;
+    padding: 2px 20px;
+    color: #fff;
+    font-size: 14px;
+    background-color: #2D6EFF;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.jdSx .jdNext .btn:nth-child(1){
+    opacity: 0.5;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.jdCenter .jdSx .btn:nth-child(2){
+    display: inline-block;
+    width: 82px;
+    margin-right: 20px;
+    cursor: pointer;
+    
+}
+/* 下边 */
+
+/* 第一行 */
+.jdTm span{
+    display: inline-block;
+    margin-top: 25px;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #000;
+}
+/* 第二行 */
+.jdXt{
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: left;
+}
+.jdXt span{
+    display: inline-block;
+    border-radius: 50px;
+    height: 25px;
+    width: 25px;
+    border: 0.39px solid rgba(0,0,0,0.2);
+    margin-left: 12px;
+    line-height: 25px;
+    text-align: center;
+    color: rgba(0,0,0,0.2);
+    font-size: 12px;
+    font-weight: bold;
+}
+.jdXt span:nth-child(1){
+    color: #2D6EFF;
+    margin-left: 0px;
+}
+.jdXt span:nth-child(2){
+    border: #2D6EFF;
+    color: #fff;
+    background-color: #2D6EFF;
+}
+.jdXt span:hover{
+    border: #2D6EFF;
+    color: #fff;
+    background-color: #2D6EFF;
+    cursor: pointer;
+}
+
+/* 合作伙伴 */
+.partnerBox p{
+    color: #2d2d2d;
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+.pbContent{
+    width: 960px;
+    margin: 0 auto;
+}
+.partnerBox .pbImg{
+    display: flex;
+    justify-content: space-between;
+}
+.partnerBox .pbImg img{
+    width: 170px;
+    height: 75px;
+}
+
+/* 最后部分 */
+.footerBox{
+    margin-top: 60px;
+    background-color: #fff;
+}
+.fbContent{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    padding: 54px 0;
+    align-items: center;
+}
+.fbContent .left{
+    width: 60px;
+    height: 67px;
+}
+.fbContent .center{
+    flex-grow: 1;
+    padding-left: 60px;
+}
+.fbContent .center a{
+    color: #797979;
+    font-size: 14px;
+    margin-right: 20px;
+}
+.fbContent .center p{
+    color: #b7b7b7;
+    font-size: 12px;
+    margin-top: 25px;
+}
+.fbContent .right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fbContent .right span{
+    color: #797979;
+    font-size: 12px;
+}
+.fbContent .right .contact{
+    margin-bottom: 11px;
+}
+.fbContent .right img{
+    margin-right: 13px;
+}
+.fbContent .right img:nth-child(3){
+    margin-right: 0;
+}

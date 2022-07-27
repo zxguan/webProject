@@ -1,0 +1,17 @@
+<!-- <view wx:for="{{songList}}" wx:key="id" class="songItem">
+  <image src="{{item.al.picUrl}}"></image>
+  <view class="text">
+    <text class="songName">{{item.name}}</text>
+    <text class="singer">{{item.ar[0].name}}</text>
+  </view>
+</view> -->
+
+<view data-gedanid="{{item}}" bindtap="toPlay" wx:for="{{playlists}}"  wx:key="id"  class="songItem">
+  <image src="{{item.coverImgUrl}}"></image>
+  <view class="text">
+    <text  class="songName"> {{item.name}}</text>
+    <text class="singer">{{item.trackCount}}首</text>
+    <!-- <text class="singer">{{item.id}}</text> -->
+  </view>
+  <!-- <text bindtap="search" class="ka iconfont icon-xihuan"></text> -->
+</view>

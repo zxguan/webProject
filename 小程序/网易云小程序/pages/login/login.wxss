@@ -1,0 +1,44 @@
+/* pages/login/login.wxss */
+page{
+  background-color: 	#FF4500;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+}
+.logo{
+  font-family:"Times New Roman ", Times, serif;
+  font-size:100rpx;
+  color: #ffffff;
+  text-align: center;
+  padding: 150rpx 0;
+}
+.inputBox{
+  /* background-color: #999; */
+  height: 120rpx;
+  border-bottom: 1px solid #ffffff;
+  margin-bottom: 60rpx;
+  display: flex;
+}
+.inputBox>.icon{
+  line-height: 120rpx;
+  color:#ffffff;
+  font-size: 60rpx;
+}
+.inputBox>input{
+  color: #ffffff;
+  height: 100%;
+  flex-grow: 1;
+  padding: 0 30rpx;
+}
+.placeholder{
+  color: #dddddd;
+  font-size: 30rpx;
+}
+.btn{
+  height: 100rpx;
+  line-height: 100rpx; 
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 60rpx;
+  color:	#FF4500;
+  margin-top: 100rpx ;
+}

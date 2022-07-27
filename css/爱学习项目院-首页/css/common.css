@@ -1,0 +1,18 @@
+/* 对所有元素初始化 */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* 去出列表前面的圆点 */
+ul{
+    list-style: none;
+}
+/* 去除超链接的下划线 */
+a{
+    text-decoration: none;
+}
+/* 清除输入框的边框和输入时的边框 */
+input{
+    border: none;
+    outline: none;
+}

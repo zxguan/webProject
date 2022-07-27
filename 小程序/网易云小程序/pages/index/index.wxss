@@ -1,0 +1,145 @@
+/**index.wxss**/
+.searchBox{
+  background-color: #FF4500;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  justify-content: center;
+}
+.searchContent{
+  width: 90%;
+  height: 70rpx;
+  background-color: #fff;
+  display: flex;
+  border-radius: 18rpx;
+}
+.inputContent{   
+ /* background-color: brown; */
+ /* width: 500rpx; */
+  height: 100%;
+  flex-grow: 1;
+  padding: 0 20rpx;
+}
+
+.icon{
+  font-size: 40rpx;
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+swiper{
+  height: 300rpx;
+}
+swiper image{
+  width: 100%;
+  height: 100%;
+}
+.navBar{
+  width: 100%;
+  height: 200rpx;
+  /* background-color: #9999; */
+  display: flex;
+}
+.navItem{
+  width: 20%;
+  /* background-color: #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333333;
+  font-size: 26rpx;
+}
+.navItem >.icon{
+  width: 100rpx;
+  height: 100rpx;
+  background-color:#FF4500;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  margin-bottom: 20rpx;
+  font-size: 46rpx;
+}
+.playlist{
+  padding: 20rpx;
+}
+.title{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  color: #333333;
+
+}
+.title>.more{
+  font-size: 18rpx;
+  border: 1px solid #666666;
+  padding: 6rpx 8rpx;
+  border-radius: 16rpx;
+}
+.playListContent{
+  display: flex;
+  font-size: 24rpx;
+  color: #333333;
+  height: 280rpx;
+  /* background-color: #333333; */
+}
+.playListItem{
+  margin-right: 20rpx;
+}
+.playListItem>text {
+  display: -webkit-box;
+  overflow: hidden;
+  white-space: normal!important;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient:vertical;
+}
+.playListContent image{
+  width: 200rpx;
+  height: 210rpx;
+}
+
+
+
+/* 新歌推荐 */
+.newSong{
+  padding: 20rpx;
+}
+.newSongSwiper{
+  height: 570rpx;
+  /* background-color: #999999; */
+}
+.newSongSwiperItem{
+  padding-right: 20rpx;
+  /* 宽度是固定的，如果修改padding，会自动减去padding的值 */
+  box-sizing: border-box;
+}
+.songItem{
+  height: 180rpx;
+  display: flex;
+  background-color: #eee;
+  margin-bottom: 10rpx;
+}
+.songItem>image{
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 10rpx;
+}
+.songInfo{
+  display: flex;
+  flex-direction: column;
+  padding: 20rpx;
+  font-size: 30rpx;
+  
+  
+}
+.songInfo>.singer{
+  font-size: 24rpx;
+  color: #666666;
+}

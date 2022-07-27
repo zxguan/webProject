@@ -1,0 +1,9 @@
+<!--pages/playList/playList.wxml-->
+<view bindtap="toPlay" data-songid="{{item.id}}" wx:for="{{songList}}" wx:key="id" class="songItem">
+  <image  src="{{item.al.picUrl}}"></image>
+  <view class="text">
+    <text class="songName">{{item.name}}</text>
+    <text class="singer">{{item.ar[0].name}}</text>
+  </view>
+  
+</view>

@@ -1,0 +1,123 @@
+/* pages/search/search.wxss */
+
+.searchBox{
+    background-color: #FF4500;
+    width: 100%;
+    height: 100rpx;
+    display: flex;
+    justify-content: center;
+}
+.searchContent{
+    width: 90%;
+    height: 70rpx;
+    background-color: #fff;
+    display: flex;
+    border-radius: 18rpx;
+}
+.inputContent{   
+   /* background-color: brown; */
+   /* width: 500rpx; */
+    height: 100%;
+    flex-grow: 1;
+    padding: 0 20rpx;
+}
+
+.icon{
+    font-size: 40rpx;
+    width: 70rpx;
+    height: 70rpx;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.historyBox{
+  padding: 20rpx;
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 28rpx;
+    color: #333;
+}
+.title>.clear{
+    color: #FF4500;
+}
+.historyContent{
+    display: flex;
+    padding: 20rpx 0%;
+    flex-wrap: wrap;
+}
+.textContent{
+    font-size: 28rpx;
+    margin: 10rpx;
+    background-color: #999999;
+    padding: 0 14 rpx;
+    border-radius: 8rpx;
+    color: #fff;
+    white-space: nowrap;
+}
+.topSearchBox{
+    padding: 30rpx;
+    /* border: solid 1px #333; */
+  }
+.topSearchContent{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* background-color: #8f94df; */
+    border-radius: 10rpx;
+    border: solid 0.5px #333;
+}
+.contentBox{
+    width: 50%;
+    display: flex;
+}
+.contentBox>text{
+    color: #fff;
+    padding: 20rpx;
+}
+.searchContent1{
+    color:#FF4500;
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 26rpx;
+    margin-left: 20rpx;
+    border-bottom: 1rpx solid #FF4500;
+}
+.searchItem{
+    height: 80rpx;
+    line-height: 80rpx;
+    display: flex;
+
+}
+.searchItem .content{
+    flex: 1;
+    /* margin-left: 20rpx; */
+    border-bottom: 1rpx solid #eeeeee;
+    font-size:  26rpx;
+
+}
+.hotSongs{
+    width: 300rpx;
+    /* background-color: yellow; */
+    margin-bottom: 30rpx;
+    margin-top: 25rpx;
+    margin-left: 20rpx;
+    font-size: 28rpx; 
+    display: flex;
+  }
+  
+  .hotSongs>text:nth-child(1){
+    width: 30rpx;
+    margin-right: 20rpx;
+  }
+.hotSongs:nth-child(1){
+    color: rgb(255, 0, 0);
+  }
+  .hotSongs:nth-child(2){
+    color: rgb(251, 96, 0);
+  }
+  .hotSongs:nth-child(3){
+    color: rgb(253, 198, 0);
+  }

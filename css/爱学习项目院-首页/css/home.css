@@ -1,0 +1,638 @@
+html,body{
+    width: 100%;
+    height: 100%;
+    /* 给网页设置最小宽 */
+    min-width: 1600px;
+}
+body{
+    background-color: #F5F5F5;
+}
+.navBox{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+}
+.navBox>.content{
+    width: 80%;
+    height: 100px;
+    margin:0 auto;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+/* 导航条左边内容 */
+.nbLeft{
+    display: flex;
+    justify-content: space-between;
+    /* 改变垂直方向上位于底部 */
+    align-items: flex-end;
+    /* background-color: aqua; */
+}
+.nbLeft .logo{
+    display: flex;
+    margin-bottom: 8px;
+    /* justify-content: space-between; */
+}
+.nbLeft .logo img{
+    width: 45px;
+    height: 43px;
+    /* margin-bottom: 10px; */
+}
+.nbLeft .logo .text{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 5px;
+}
+.nbLeft .logo .text p:nth-child(2){
+    font-size: 10px;
+
+}
+
+.nbLeft .navBar{
+    display: flex;
+    cursor: pointer;
+
+}
+
+.nbLeft .navBar li{
+    padding-bottom: 23px;
+    margin: 0 33px;
+    font-size: 18px;
+}
+.nbLeft .navBar li:hover{
+    color: #2D6EFF;
+    border-bottom: 3px solid #2D6EFF;
+}
+.nbLeft .navBar li.active{
+    color: #2D6EFF;
+    border-bottom: 3px solid #2D6EFF;
+
+}
+
+/* 导航栏右边样式 */
+.nbRight{
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-end;
+
+}
+.nbRight .login img{
+    width: 30px;
+    height: 30px;
+}
+.nbRight .searchBox{
+    background-color: #F6F6F6;
+    width: 395px;
+    height: 35px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+}
+.nbRight .searchBox img{
+    width: 21px;
+    height: 21px;
+    margin: 0 6px;
+    
+}
+.nbRight .searchBox input{
+    /* 将剩余空间占满 */
+    flex-grow: 1;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+    
+
+}
+.nbRight .login img{
+    vertical-align: middle;
+}
+.nbRight .login{
+    /* vertical-align: ; */
+    color: #6d6d6d;
+    font-size: 16px;
+    margin: 0 0 23px 40px;
+}
+
+/* 第二部分内容的样式 */
+.lunboBox{
+    width: 1200px;
+    height: 460px;
+    margin: 60px auto;
+    /* background-color: aqua; */
+    display: flex;
+    border-radius: 10px;
+    /* 将图片溢出的尖角隐藏 */
+    overflow: hidden;
+}
+.lunboBox .lbLeft{
+    width: 350px;
+    height: 100%;
+    background-color: #96b6ef;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    padding: 35px 0 35px 20px;
+}
+/* a标签不会继承父类字体样式 需要另外设置 */
+.lunboBox .lbLeft a{
+    color: #ffffff;
+    margin-right: 30px;
+}
+.lunboBox .lbLeft div>a:last-child{
+    margin-right: 0;
+}
+.lunboBox .lbLeft h3{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.lunboBox .lbLeft li{
+    margin-bottom: 42px;
+}
+.lunboBox .lbLeft li:last-child{
+    margin-bottom: 0;
+}
+.lunboBox .lbRight{
+    width: 850px;
+    height: 100%;
+    position: relative;
+}
+.lunboBox .lbRight>img{
+    width: 100%;
+    height: 100%;
+}
+.lunboBox .lbRight .arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 500%;
+    background: rgba(0,0,0,0.39);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    position: absolute; 
+    top: 50%;
+    transform: translate(0px,-25px);
+}
+.arrow1{
+    left: 65px;   
+}
+.arrow2{
+    right: 65px;
+}
+
+/* 第三部分 */
+.pbContent{
+    width: 1200px;
+    margin: 0 auto;
+    /* background-color: #96b6ef; */
+}
+.title{
+    display: flex;
+    justify-content: space-between;
+}
+.title .titleLeft{
+    display: flex;
+    align-items: flex-end;
+}
+.title .titleLeft .titleLogo{
+    display: flex;
+    align-items: center;
+    font-size: 26px;
+}
+
+.title .titleLeft .titleLogo img{
+    width: 76px;
+    height: 76px;
+    
+}
+
+.title .titleLeft  .titleNav{
+    display: flex;
+    margin-left: 44px;
+}
+
+.titleLeft .titleNav{
+    font-size: 18px;
+    color: #797979;
+
+}
+
+.titleLeft .titleNav .navItem{
+    /* background-color: thistle; */
+    padding: 12px 29px;
+    margin-right: 30px;
+    border: 1px solid rgba(0,0,0,0);
+    cursor: pointer;
+}
+
+.titleLeft .titleNav .navItem.active{
+    color: #2D6EFF;
+    font-weight: bolder;
+    border: 1px solid #2d6eff;
+    border-radius: 33px;
+}
+.titleLeft .titleNav .navItem:hover{
+    color: #2D6EFF;
+    font-weight: bolder;
+    border: 1px solid #2d6eff;
+    border-radius: 33px;
+}
+
+.title .titleRight{
+    /* background-color: #2D6EFF; */
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #2D6EFF;
+}
+
+.title .titleRight span{
+    margin-right: 5px;
+}
+
+.projectList{
+    /* width: 1200px; */
+    /* background-color: rebeccapurple; */
+    /* margin: 10px auto;  */
+    display: flex;
+    /* 设置子元素换行 */
+    flex-wrap: wrap;
+    padding-bottom: 55px;
+    
+}
+
+/* 一个课程项目 */
+.projectItem{
+    width: 278px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 20px 29px 0 0;
+    /* 空间不够的情况下不收缩 */
+    flex-shrink: 0;
+    position: relative;
+    
+}
+
+.projectItem:nth-child(4n){
+    margin-right: 0;
+}
+
+.projectItem>img{
+    width: 100%;
+    height: 170px;
+}
+
+.projectItem h3{
+    margin: 10px;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.projectItem p{
+    /* 文本超出不换行 */
+    white-space: nowrap;
+    /* 溢出文字隐藏 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 10px 13px;
+    color: #606060;
+    font-size: 16px;
+}
+
+.projectItem .data{
+    display: flex;
+    margin: 0 10px 18px;
+    font-size: 14px;
+    color: #b4b4b4;
+
+}
+
+.projectItem .data .dataItem{
+    margin-right: 24px;
+}
+
+.projectItem .icon{
+    width: 54px;
+    height: 23px;
+    background-color: #FF7777;
+    color: #fff;
+    text-align: center;
+    line-height: 23px;
+    font-size: 14px;
+    border-radius: 10px 0 10px 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.projectItem:hover >img{
+    /* 选中后状态会变为半透明 */
+    opacity: 0.5;
+}
+
+.projectItem:hover>.icon{
+    opacity: 0.5;
+}
+
+/* 第四部分 */
+.wikiBox{
+    background-color: #fff;
+}
+.wikiContent{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* wiki */
+.wikiList{
+    /* background-color: bisque; */
+}
+.wikiItem{
+    /* background-color: cadetblue; */
+    display: flex;
+    padding: 40px 0;
+    border-bottom: 1px solid #eeeeee;
+
+}
+
+.wikiItem:hover{
+    cursor: pointer;
+}
+
+.wikiLeft{
+    width: 277px;
+    height: 166px;
+    border-radius: 10px;
+}
+
+.wikiRight{
+    display: flex;
+    padding: 0 37px;
+
+    flex-grow: 1;
+}
+
+.wikiRightContent{
+    /* 防止第一行和第二行内容太少撑不开盒子 */
+    flex-grow: 1;
+    /* background-color: chartreuse; */
+}
+/* 第一行 */
+.wikiRightContent>div:first-child{
+    margin-bottom: 28px;
+    display: flex;
+}
+
+.wikiRightContent .icon{
+    width: 83px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgba(45,110,255,0.39);
+    color: #2d6eff;
+    text-align: center;
+    line-height: 30px;
+    font-size: 16px;
+    margin-right: 18px;
+}
+.wikiRightContent h3{
+    font-size: 22px;
+}
+.wikiRightContent .detail{
+    margin-bottom: 36px;
+    color: #9c9c9c;
+    font-size: 18px;
+    /*以下代码作用：只显示两行 超出部分不显示 */
+    text-overflow:-o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.wikiRightContent .data{
+    display: flex;
+    font-size: 16px;
+    color: #b4b4b4;
+
+}
+.wikiRightContent .data .dataItem{
+    margin-right: 18px;
+}
+
+.wikiRightContent .data img{
+    /* 让所有图片跟着文字中线对齐 */
+    vertical-align: middle;
+}
+
+.wikiRightBtn{
+    /* 设置按钮不被压缩 */
+    flex-shrink: 0;
+    /* background-color: cornflowerblue; */
+    margin-left: 57px;
+}
+
+.wikiRightBtn .btn{
+    width: 92px;
+    height: 35px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 35px;
+    font-size: 18px;
+}
+
+.wikiRightBtn .btn>img{
+    vertical-align: middle;
+}
+
+.wikiRightBtn .btn:first-child{
+    background-color: #2d6eff;
+    color: #fff;
+    margin-top: 58px ;
+}
+.wikiRightBtn .btn:last-child{
+    border: 1px solid #2d6eff;
+    color: #2d6eff;
+    margin-top: 34px;
+}
+
+/* 第五部分 */
+.testBox{
+    padding-bottom: 164px;
+}
+
+
+.tbContent{
+    width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.testList{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+/* 去掉最后一个的右边margin */
+.testItem:nth-child(5n){
+    margin-right: 0;
+}
+
+.testItem{
+    background-color: #fff;
+    width: 220px;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 12px;
+    margin-top: 18px;
+    margin-right: 25px;
+    position: relative;
+    /* 防止空间不够被压缩 */
+    flex-shrink: 0;
+    cursor: pointer;
+}
+.testItem:hover .mask{
+    display: flex;
+}
+
+.testItem>img{
+    width: 100%;
+    height: 195px;
+}
+
+.testItem h3{
+    font-size: 16px;
+    margin-left:10px;
+    margin-top: 9px;
+    
+
+}
+
+.testItem p{
+    font-size: 14px;
+    color: #606060;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.testItem .mask{
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    
+}
+
+.testItem .mask img{
+    width: 38px;
+    height: 38px;
+    margin-top: 94px;
+    margin-bottom: 35px;
+}
+
+.testItem .mask .btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #2d6eff;
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    line-height: 40px;
+}
+
+/* 第六部分 */
+.partnerBox p{
+    color: #2d2d2d;
+    font-size: 22px;
+    margin-bottom: 26px;
+}
+
+
+.partnerBox .pbImg{
+    display: flex;
+    justify-content: space-between;
+}
+
+.partnerBox .pbImg img{
+    width: 220px;
+    height: 75px;
+    
+}
+
+
+
+/* 最后一部分 */
+.footerBox{
+    margin-top: 60px;
+    background-color: #fff;
+}
+
+
+.fbContent{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    padding: 54px 0;
+    align-items: center;
+}
+
+.fbContent .left{
+    width: 60px;
+    height: 67px;
+}
+
+.fbContent .center{
+    /* 占满所有剩余空间 */
+    flex-grow: 1;
+    padding-left: 70px;
+
+}
+
+.fbContent .center a{
+    font-size: 14px;
+    color: #797979;
+    margin-right: 40px;
+}
+
+.fbContent .center p{
+    font-size: 12px;
+    color: #b7b7b7;
+    margin-top: 25px;
+}
+
+.fbContent .right{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.fbContent .right span{
+    font-size: 12px;
+    color: #797979;
+
+}
+
+.fbContent .right .contact{
+    margin-bottom: 11px;
+}
+
+.fbContent .right img{
+    margin-right: 13px;
+}
+
+.fbContent .right img:last-child{
+    margin-right: 0;
+}

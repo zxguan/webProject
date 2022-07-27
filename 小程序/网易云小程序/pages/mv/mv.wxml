@@ -1,0 +1,11 @@
+<!--pages/video/video.wxml-->
+<view wx:for="{{videoList}}" wx:key="id" bindtap="handlePlay" 
+  id="{{item.data.vid}}" poster="{{item.data.coverUrl}}" class="videoContainer">
+  <view class="videolist">
+    <video src="{{item.data.urlInfo.url}}"></video>
+  </view>
+  
+  <view class="title">
+    <text>{{item.data.title}}</text>
+  </view>
+</view>

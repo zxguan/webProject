@@ -1,0 +1,79 @@
+<!--首页-->
+<!-- 搜索框 -->
+<view class="searchBox">
+  <view class="searchContent">
+    <input class="inputContent" model:value="{{inputValue}}" placeholder="请输入搜索内容" type="text" bindinput="handleInputChange" bindtap="toSearch"/>
+    <text class="icon iconfont icon-sousuo" bindtap="search"></text>
+  </view>
+</view>
+
+<!-- 轮播区域 -->
+<swiper autoplay indicator-dots interval="2000">
+  <swiper-item wx:for="{{bannerList}}" wx:key="bannerId">
+    <image src="{{item.pic}}"></image>
+  </swiper-item>
+</swiper>
+
+<!-- 功能导航区域 -->
+<view class="navBar">
+  <view class="navItem" bindtap="toRecommendSong">
+    <text class="icon iconfont icon-icon"></text>
+    <text>每日推荐</text>
+  </view >
+  <view class="navItem" bindtap="showVideo">
+    <text class="icon iconfont icon-shouyinji"></text>
+    <text>视频</text>
+  </view>
+  <view class="navItem" bindtap="togedanSquare">
+    <text class="icon iconfont icon-gedan"></text>
+    <text>歌单</text>
+  </view>
+  <view class="navItem">
+    <text class="icon iconfont icon-paihangbang"></text>
+    <text>排行榜</text>
+  </view>
+  <view class="navItem">
+    <text class="icon iconfont icon-zhibo"></text>
+    <text>直播</text>
+  </view>
+</view>
+
+<!-- 推荐歌单 -->
+<view class="playlist">
+  <!-- 标题 -->
+  <view class="title">
+    <text class="">推荐歌单</text>
+    <text class="more">查看更多</text>
+  </view>
+  <!-- 歌单 -->
+  <scroll-view class="playListContent" scroll-x enable-flex >
+    <view wx:for="{{playlists}}" wx:key="id" class="playListItem" bindtap="tosongSheet" data-id="{{item.id}}">
+      <image src="{{item.coverImgUrl}}"></image>
+      <text>{{item.name}}</text>
+    </view>
+  </scroll-view>
+</view>
+
+<!-- 新歌推荐 -->
+<view class="newSong">
+  <!-- 标题 -->
+  <view class="title">
+    <text class="">新歌推荐</text>
+    <text class="more">查看更多</text>
+  </view>
+  <!-- 轮播区域 -->
+  <swiper class="newSongSwiper" next-margin="40rpx">
+  <!-- 轮播的一屏 -->
+    <swiper-item wx:for="{{newSonglists}}" wx:key="index" class='newSongSwiperItem'>
+    <!-- 一条歌曲信息 -->
+      <view bindtap="toPlay" data-songid="{{secItem.id}}" wx:for="{{item}}" wx:key="id" wx:for-item="secItem" class="songItem">
+        <image src="{{secItem.picUrl}}"></image>
+        <view class="songInfo">
+          <text >{{secItem.name}}</text>
+          <text class="singer">{{secItem.song.artists[0].name}}</text>
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
